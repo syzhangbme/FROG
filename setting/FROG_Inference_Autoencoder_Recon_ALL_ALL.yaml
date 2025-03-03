@@ -1,0 +1,17 @@
+data:
+  dataPath: '../data/processed/augment/'
+  sitenameList: ['site1_ADNI2', 'site2_ADNI3', 'site3_Xuanwu1', 'site4_Xuanwu2', 'site5_Tongji1']
+  categoryDict: {'CN':0, 'MCI':1, 'AD':2}
+  adjType: 'pearson'
+  adjThr: pos
+
+result:
+  loadPath: './result/model/FROG_Autoencoder/CoRR'
+  savePath: './result/inference/FROG_Autoencoder_Recon/ALL/ALL'
+
+model:
+  paramDefault:
+    LR: 0.00001
+    L2: 0.0001
+    BATCHSIZE: 30
+    EPOCHS: 300

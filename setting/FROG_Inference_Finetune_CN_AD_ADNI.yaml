@@ -1,0 +1,17 @@
+data:
+  dataPath: '../data/processed/augment/'
+  sitenameList: ['site1_ADNI2', 'site2_ADNI3', ]
+  categoryDict: {'CN':0, 'AD':1}
+  adjType: 'pearson'
+  adjThr: pos
+
+result:
+  loadPath: './result/model/FROG_Finetune/CN_MCI/ADNI'
+  savePath: './result/inference/FROG_Finetune/CN_AD/ADNI'
+
+model:
+  paramDefault:
+    LR: 0.00001
+    L2: 0.0001
+    BATCHSIZE: 30
+    EPOCHS: 300

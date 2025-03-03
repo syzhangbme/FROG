@@ -1,0 +1,16 @@
+data:
+  dataPath: '../data/processed/augment/'
+  sitenameList: ['site0_CoRR', ]
+  categoryDict: {'CN':0, }
+  adjType: 'pearson'
+  adjThr: pos
+
+result:
+  savePath: './result/model/FROG_Autoencoder/CoRR'
+
+model:
+  paramDefault:
+    LR: 0.00001
+    L2: 0.0001
+    BATCHSIZE: 30
+    EPOCHS: 500
